@@ -1,0 +1,9 @@
+{
+    "identifier": "djangocms-foundation6",
+    "package-name": "djangocms-foundation6",
+    "version": "0.1.0",
+    "templates": [
+        ["content.html", "content"]
+    ],
+    "protected": []
+}
