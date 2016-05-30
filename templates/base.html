@@ -1,0 +1,37 @@
+{% load static i18n cms_tags menu_tags sekizai_tags %}
+{# latest version from 6.2.2 http://foundation.zurb.com/ #}
+<!doctype html>
+<html class="no-js" lang="{{ LANGUAGE_CODE }}" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% page_attribute page_title %} - {{ request.site.name }}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/foundation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    {% render_block "css" %}
+    {{ ALDRYN_SNAKE.render_head }}
+  </head>
+  <body>
+    {% cms_toolbar %}
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Welcome to Foundation</h1>
+        <ul class="menu">
+          {% show_menu 0 0 100 100 %}
+        </ul>
+      </div>
+    </div>
+
+    {% block content %}
+        <p>Hello world! This is the Foundation 6 Boilerplate.</p>
+    {% endblock %}
+
+    <script src="{% static 'js/vendor/jquery.js' %}"></script>
+    <script src="{% static 'js/vendor/what-input.js' %}"></script>
+    <script src="{% static 'js/vendor/foundation.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+    {% render_block "js" %}
+    {{ ALDRYN_SNAKE.render_tail }}
+  </body>
+</html>
