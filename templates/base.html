@@ -16,7 +16,7 @@
     {% cms_toolbar %}
     <div class="row">
       <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+        <h1>{% trans "Welcome to" %} {{ request.site.name }}</h1>
         <ul class="menu">
           {% show_menu 0 0 100 100 %}
         </ul>
