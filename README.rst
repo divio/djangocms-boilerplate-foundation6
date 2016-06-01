@@ -16,7 +16,7 @@ This boilerplate is compatible with `Aldryn <http://www.aldryn.com/>`_.
 
 .. note::
 
-    In order to work with the Aldryn system, `index.html` needed to be renamed to
+    In order to work with django CMS, `index.html` has been renamed to
     `base.html` and assets have been moved to the `static/` folder.
 
 
