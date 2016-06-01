@@ -17,7 +17,7 @@ This boilerplate is compatible with `Aldryn <http://www.aldryn.com/>`_.
 .. note::
 
     In order to work with the Aldryn system, `index.html` needed to be renamed to
-    `base.html`.
+    `base.html` and assets have been moved to the `static/` folder.
 
 
 Documentation
