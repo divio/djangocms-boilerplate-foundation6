@@ -1,7 +1,7 @@
 {
     "identifier": "foundation6",
     "package-name": "djangocms-foundation6",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "templates": [
         ["content.html", "content"]
     ],
