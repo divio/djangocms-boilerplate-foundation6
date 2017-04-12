@@ -10,19 +10,16 @@ device. Foundation is semantic, readable, flexible, and completely
 customizable. We’re constantly adding new resources and code snippets,
 including these handy HTML templates to help get you started!
 
-Up to date with `Foundation <http://foundation.zurb.com/>`_ **6.2.2**.
+Up to date with `Foundation <http://foundation.zurb.com/>`_ **6.3.1**.
 
 This boilerplate is compatible with `Divio Cloud <http://www.divio.com/>`_.
-
-.. note::
-
-    In order to work with django CMS, `index.html` has been renamed to
-    `base.html` and assets have been moved to the `static/` folder.
 
 
 Documentation
 -------------
 
-You can find additional documentation on the django CMS within the `django CMS Bootstrap Boilerplate
-<https://aldryn-boilerplate-bootstrap3.readthedocs.io>`_ or the `django CMS Documentation
-<https://django-cms.readthedocs.io>`_.
+In order to work with django CMS, ``index.html`` has been renamed to
+``base.html`` and assets have been moved to the ``static/`` directory.
+
+Please refer to our `**Quickstart Guides** <http://support.divio.com/control-panel/boilerplates/>`_
+for further help on boilerplates.
