@@ -1,3 +1,4 @@
+========================
 Foundation 6 Boilerplate
 ========================
 
@@ -16,7 +17,7 @@ This boilerplate is compatible with `Divio Cloud <http://www.divio.com/>`_.
 
 
 Documentation
--------------
+=============
 
 In order to work with django CMS, ``index.html`` has been renamed to
 ``base.html`` and assets have been moved to the ``static/`` directory.
