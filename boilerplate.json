@@ -1,9 +1,9 @@
 {
     "identifier": "foundation6",
     "package-name": "djangocms-foundation6",
-    "version": "6.5.1",
+    "version": "6.5.3.1",
     "templates": [
-        ["content.html", "content"]
+        ["default.html", "Default"]
     ],
     "excluded": [
         "LICENSE.txt",
