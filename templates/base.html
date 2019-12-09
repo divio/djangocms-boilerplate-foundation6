@@ -1,36 +1,38 @@
 {% load staticfiles i18n cms_tags menu_tags sekizai_tags %}
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="{{ LANGUAGE_CODE }}" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% page_attribute page_title %} - {{ request.site.name }}{% endblock title %}</title>
-    <link rel="stylesheet" href="{% static 'css/foundation.css' %}">
-    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        {% page_attribute page_title %} - {{ request.site.name }}
+      {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/foundation.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/foundation-float.min.css' %}" />
     {% render_block "css" %}
     {{ ALDRYN_SNAKE.render_head }}
   </head>
   <body>
     {% cms_toolbar %}
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>{% trans "Welcome to" %} {{ request.site.name }}</h1>
+
+    <div class="top-bar">
+      <nav class="top-bar-left">
         <ul class="menu">
           {% show_menu 0 0 100 100 %}
         </ul>
-      </div>
+      </nav>
     </div>
 
     {% block content %}
-      <p>Hello world! This is the Foundation 6 Boilerplate.</p>
+    <h1>{% trans "Welcome to" %} {{ request.site.name }}</h1>
+    <p>Hello world! This is the Foundation 6 Boilerplate.</p>
     {% endblock %}
 
-    <script src="{% static 'js/vendor/jquery.js' %}"></script>
-    <script src="{% static 'js/vendor/what-input.js' %}"></script>
-    <script src="{% static 'js/vendor/foundation.js' %}"></script>
-    <script src="{% static 'js/app.js' %}"></script>
-    {% render_block "js" %}
-    {{ ALDRYN_SNAKE.render_tail }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{% static 'js/foundation.min.js' %}"></script>
+    {% render_block "js" %} {{ ALDRYN_SNAKE.render_tail }}
   </body>
 </html>
