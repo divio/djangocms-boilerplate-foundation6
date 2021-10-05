@@ -11,7 +11,7 @@ device. Foundation is semantic, readable, flexible, and completely
 customizable. We’re constantly adding new resources and code snippets,
 including these handy HTML templates to help get you started!
 
-Up to date with `Foundation <http://foundation.zurb.com/>`_ **6.6.3**.
+Up to date with `Foundation <http://foundation.zurb.com/>`_ **6.7.3**.
 
 This boilerplate is compatible with `Divio Cloud <http://www.divio.com/>`_.
 
