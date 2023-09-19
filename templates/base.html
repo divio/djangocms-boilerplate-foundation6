@@ -6,14 +6,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      {% block title %}
-        {% page_attribute page_title %} - {{ request.site.name }}
-      {% endblock title %}
+      {% block title %} {% page_attribute page_title %} - {{ request.site.name
+      }} {% endblock title %}
     </title>
     <link rel="stylesheet" href="{% static 'css/foundation.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/foundation-float.min.css' %}" />
-    {% render_block "css" %}
-    {{ ALDRYN_SNAKE.render_head }}
+    {% render_block "css" %} {{ ALDRYN_SNAKE.render_head }}
   </head>
   <body>
     {% cms_toolbar %}
@@ -31,7 +29,7 @@
     <p>Hello world! This is the Foundation 6 Boilerplate.</p>
     {% endblock %}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="{% static 'js/foundation.min.js' %}"></script>
     {% render_block "js" %} {{ ALDRYN_SNAKE.render_tail }}
   </body>
